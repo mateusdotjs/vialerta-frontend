@@ -13,6 +13,7 @@ export const AuthContext = ({ children }) => {
   let location = useLocation();
 
   async function login(email, password) {
+    setLoading(loading);
     setError(null);
     const response = await fetch(import.meta.env.VITE_BACKEND_URL + "/login", {
       method: "POST",

@@ -23,7 +23,7 @@ const Home = () => {
 
     async function getOcorrencias() {
       const params = new URLSearchParams({
-        time: "1m",
+        time: "1h",
         type: "Todas",
       });
 
@@ -38,7 +38,7 @@ const Home = () => {
         return json;
       } catch (error) {
         return Promise.reject(error);
-      }
+      } 
     }
 
     Promise.allSettled([getStatus(), getOcorrencias()])
