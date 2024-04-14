@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Select from "./Select";
 import { useParams } from "react-router-dom";
+import Loading from "../global/Loading";
 
 const options = [
   {
@@ -98,7 +99,7 @@ const TotalOcorrencias = () => {
       </h1>
       <Select options={options} setType={setType} />
       {loading ? (
-        "Carregando..."
+        <Loading />
       ) : (
         <table>
           <tbody>
