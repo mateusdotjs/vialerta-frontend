@@ -7,8 +7,8 @@ const typesValidation = {
     error: "Preencha com um email válido",
   },
   password: {
-    regex: /^.{5,}$/,
-    error: "Preencha com pelo menos 5 caracteres",
+    regex: /^.{6,}$/,
+    error: "Preencha com pelo menos 6 caracteres",
   },
 };
 
