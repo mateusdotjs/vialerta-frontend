@@ -27,7 +27,7 @@ const LoginCreate = () => {
     login(email.value, password.value);
   }
 
-  if (loggedIn == true) return <Navigate to="/home" />;
+  if (loggedIn == true) return <Navigate to="/" />;
   return (
     <div className="animate-slide">
       <form className="mb-7">
